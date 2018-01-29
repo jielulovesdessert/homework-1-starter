@@ -8,10 +8,10 @@ from __future__ import division
 import numpy as np
 
 def test_1():
-    assert 2/8 == 0.25
+    assert 2/float(8) == 0.25
 
 def test_2():
-    assert np.divide(2,8)==0.25
+    assert np.true_divide([2],[8])==0.25
     
 
 
