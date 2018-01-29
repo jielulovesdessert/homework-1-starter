@@ -5,9 +5,8 @@ Created on Mon Jan 29 01:20:45 2018
 @author: Jie Lu
 """
 
-import io
-
 def test():
-    text= io.open('task2/input.txt')
-    char=text.read().strip()
-    assert len(char)==6
+    utf8_text=open('input.txt','rt').read()
+    unicode_data = utf8_text.strip().decode('utf8')
+    assert len(unicode_data) == 6
+    
