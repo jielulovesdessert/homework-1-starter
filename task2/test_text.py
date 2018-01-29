@@ -6,7 +6,7 @@ Created on Mon Jan 29 01:20:45 2018
 """
 
 def test():
-    utf8_text=open('input.txt','rt').read()
+    utf8_text=open('task2/input.txt','rt').read()
     unicode_data = utf8_text.strip().decode('utf8')
     assert len(unicode_data) == 6
     
